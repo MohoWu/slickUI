@@ -4,10 +4,18 @@
 \alias{slick}
 \title{Slick carousel}
 \usage{
-slick(...)
+slick(dots = TRUE, infinite = TRUE, slidesToShow = 1, slidesToScroll = 1, ui)
 }
 \arguments{
-\item{...}{Div elements to show in the slider.}
+\item{dots}{Whether to show dots.}
+
+\item{infinite}{infinite scrolling}
+
+\item{slidesToShow}{number of slides to show in each window}
+
+\item{slidesToScroll}{number of slides to scroll each time}
+
+\item{ui}{Elements to show in the slider.}
 }
 \value{
 
@@ -16,5 +24,5 @@ slick(...)
 Slick carousel
 }
 \examples{
-slick(shiny::div("content1"), shiny::div("content2"))
+slick(ui = shiny::tagList(shiny::div("content1"), shiny::div("content2")))
 }
