@@ -2,8 +2,8 @@ Package: slickUI
 Type: Package
 Title: Slick slider UI for shiny
 Version: 0.1.0
-Author: Hao Wu
-Maintainer: Hao Wu <hao.wu@argusmedia.com >
+Authors@R: 
+    person("Hao", "Wu", , "hao.wu@argusmedia.com", role = c("aut", "cre"))
 Description: This package contains functions to create the carousel sliders for shiny based 
  on the slick JS library.
 License: What license is it under?
