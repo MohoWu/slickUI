@@ -1,0 +1,12 @@
+/* .slick-prev:before,
+.slick-next:before {
+    color: blue;
+} */
+
+.slick-dots li button:before {
+    color: white;
+}
+
+.slick-dots li.slick-active button:before {
+    color: orange !important;
+}
