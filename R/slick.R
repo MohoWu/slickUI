@@ -1,5 +1,6 @@
 #' Slick carousel
 #'
+#' @param id id for the slick div
 #' @param ui Elements to show in the slider.
 #' @param dots Whether to show dots.
 #' @param infinite infinite scrolling
@@ -10,7 +11,8 @@
 #' @export
 #'
 #' @examples slick(ui = shiny::tagList(shiny::div("content1"), shiny::div("content2")))
-slick <- function(dots = TRUE,
+slick <- function(id = NULL,
+                  dots = TRUE,
                   infinite = TRUE,
                   slidesToShow = 1,
                   slidesToScroll = 1,
@@ -19,12 +21,12 @@ slick <- function(dots = TRUE,
   shiny::tagList(
 
 		shiny::div(
-		  class = "slider",
+		  id = id,
 		  ui
 		),
 		tags$script(HTML(
 		  glue::glue(
-		    "$('.slider').slick({
+		    "$('#{{id}}').slick({
 			dots: {{tolower(dots)}},
 			infinite: {{tolower(infinite)}},
 			slidesToShow: {{slidesToShow}},
