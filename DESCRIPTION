@@ -6,10 +6,11 @@ Authors@R:
     person("Hao", "Wu", , "hao.wu@argusmedia.com", role = c("aut", "cre"))
 Description: This package contains functions to create the carousel sliders for shiny based 
  on the slick JS library.
-License: What license is it under?
+License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: true
 Imports: 
+    glue,
     htmltools,
     shiny
 RoxygenNote: 7.1.2
